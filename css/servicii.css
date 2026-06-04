@@ -1,6 +1,7 @@
 .top-title {
     text-align: center;
     font-size: 35px;
+    top: 90px;
 }
 
 .image-area {
@@ -69,6 +70,23 @@ summary {
     cursor: pointer;
 }
 
+.submit3 {
+     width: 20%;
+    background-color: var(--secondary); 
+    color: #222;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px ;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit3:hover {
+    background-color: var(--primary);
+}
+
 .continut {
     border-top: 4px solid #90caf9;
     padding: 15px;
@@ -81,4 +99,32 @@ details[open] summary {
 
 .main-container1 {
     border: 2px solid black;
+}
+
+@media (max-width:400px) {
+
+    summary {
+       font-size: 18px;
+       padding-top: 20px;
+    }
+
+    .continut {
+        font-size: 20px;
+    }
+
+    .top-title {
+        font-size: 28px;
+    }
+
+   .image-area img  {
+        height: 180px;
+   }
+
+   .aici {
+    padding-left: 5px;
+    width: 100%;
+    font-size: 20px;
+   }
+
+
 }
