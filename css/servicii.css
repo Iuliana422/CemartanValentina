@@ -17,6 +17,14 @@
     box-shadow: rgb(171, 170, 170) 0px 5px 15px 10px;
 }
 
+form {
+    border-radius: 10px;
+    margin-left: 35%;
+    border: 1px solid black;
+    width: 30%;
+    padding: 20px 0;
+}
+
 .form-area {
     text-align: center;
     width: 100%;
@@ -24,11 +32,11 @@
 }
 
 .submit-btn {
-    width: 20%;
+    width: 40%;
     background-color: var(--secondary); 
     color: #222;
     border: none;
-    padding: 10px;
+    padding: 5px;
     margin-top: 10px;
     border-radius: 10px ;
     font-size: 16px;
@@ -78,9 +86,12 @@ summary {
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px ;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-left: 70%;
+    display: none;
+   
 }
 
 .submit3:hover {
@@ -101,11 +112,29 @@ details[open] summary {
     border: 2px solid black;
 }
 
+.main-container {
+    padding-bottom: 50px;
+}
+
 @media (max-width:400px) {
+
+    form {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* .form-area {
+        width: 100%;
+    } */
+
+    .description {
+        width: 100%;
+        padding: 10px;
+    }
 
     summary {
        font-size: 18px;
-       padding-top: 20px;
+       padding-top: 14px;
     }
 
     .continut {
@@ -124,6 +153,10 @@ details[open] summary {
     padding-left: 5px;
     width: 100%;
     font-size: 20px;
+   }
+
+   .submit3 {
+    display: block;
    }
 
 
